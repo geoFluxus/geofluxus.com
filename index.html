@@ -1,0 +1,792 @@
+<html lang="en"> 
+<head>
+	<!-- [WELCOME] Hello, welcome to geoFluxus -->
+        <link rel="schema.DC" href="http://purl.org/dc/elements/1.1/">
+        <meta name="DC.identifier" content="index-hr">
+        <meta property="og:type" content="website">
+
+        <!-- [META] Titles -->
+        <title>geoFluxus</title>
+        <meta name="DC.title" content="geoFluxus">
+        <meta property="og:title" content="geoFluxus">
+        <meta name="twitter:title" content="geoFluxus">
+        <meta itemprop="name" content="geoFluxus">
+        <meta name="DC.subject" content="geoFluxus">
+        <meta property="og:site_name" content="geoFluxus">
+        <meta name="twitter:site" content="/">
+
+        <!-- [META] Description -->
+        <meta name="description" content="" >
+        <meta itemprop="description" content="">
+        <meta name="DC.description" content="">
+        <meta property="og:description" content="">
+        <meta name="twitter:description" content="">
+
+        <!-- [META] Defaults -->
+        <link rel="canonical" href="/">
+        <base href="/">
+        <meta property="og:url" content="/">
+
+        <!-- [META] Devices -->
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta http-equiv="Window-target" content="_top">
+        <meta name="format-detection" content="telephone=yes">
+        <meta name="format-detection" content="date=yes">
+        <meta name="format-detection" content="address=yes">
+        <meta name="format-detection" content="email=yes">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-touch-fullscreen" content="yes">
+
+        <!-- [META] Icons -->
+        <link rel="shortcut icon" href="">
+
+        <!-- [META] Bots -->
+        <meta name="robots" content="index,follow">
+        <meta name="googlebot" content="index,follow">
+        <meta http-equiv="pragma" content="public" >
+        <meta http-equiv="cache-control" content="public" >
+
+        <!-- [META] Dates -->
+        <meta name="date" content="2020-02-15T:16:00:00" >
+        <meta name="DC.date" content="2020-02-15T:16:00:00">
+        <meta http-equiv="last-modified" content="2020-02-15T:16:00:00" >
+
+
+        <!-- [META] Locale -->
+        <meta charset="UTF-8" >
+        <meta http-equiv="content-language" content="hr_HR" >
+        <meta property="og:locale" content="hr_HR">
+        <meta name="DC.language" content="hr_HR">
+        <meta http-equiv="Content-Style-Type" content="text/css" >
+        <meta http-equiv="Content-Script-Type" content="text/javascript">
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta name="DC.format" content="text/html">
+
+        <!-- [META] Images -->
+        <meta itemprop="image" content="">
+        <meta name="twitter:image:src" content="">
+        <meta property="og:image" content="">
+        <meta property="og:image:url" content="">
+        <meta property="og:image:secure_url" content="">
+        <meta property="og:image:width" content="1200"/>
+        <meta property="og:image:height" content="630"/>
+        <meta name="twitter:card" content="summary_large_image">
+        <meta property="og:image:type" content="image/jpg"/>
+
+        <!-- [META] Copy -->
+        <meta name="DC.contributor" content="geoFluxus">
+        <meta name="DC.publisher" content="geoFluxus">
+        <meta name="author" content="geoFluxus" />
+        <meta name="DC.rights" content="Copyright 2020 | geoFluxus">
+        <meta name="DC.rightsHolder" content="geoFluxus">
+        <meta name="copyright" content="Copyright 2020 | geoFluxus">
+        <meta name="twitter:creator" content="geoFluxus">
+
+        <!-- [META] Security -->
+        <meta property="fb:admins" content="799459272">
+        <meta property="fb:app_id" content="">
+        <meta name="p:domain_verify" content=""/>
+        <meta name="google-site-verification" content="" />
+
+				<!-- [STYLES] -->
+				<link rel="stylesheet" href="/source/dist/css/theme.min.css?v=4">
+
+
+
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/openlayers/openlayers.github.io@master/en/v6.3.1/css/ol.css" type="text/css">
+
+    <script src="https://cdn.jsdelivr.net/gh/openlayers/openlayers.github.io@master/en/v6.3.1/build/ol.js"></script>
+
+</head>
+<body >
+<div class="snap-container">
+
+  <div class="fullmenu collapse" id="mainNavbar">
+    <nav class="navbar navbar-dark justify-content-end pt-4 pl-5">
+      <button class="navbar-toggler text-dark" type="button" data-toggle="collapse" data-target="#mainNavbar" aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="fa fa-times"></span>
+      </button>
+    </nav>
+
+    <ul class="nav flex-column">
+      <li class="nav-item">
+        <a class="nav-link scroll-link" href="#mission">Mission</a>
+        <a class="nav-link scroll-link" href="#product">Product</a>
+        <a class="nav-link scroll-link" href="#projects">Projects</a>
+        <a class="nav-link scroll-link" href="#team">Team</a>
+        <a class="nav-link scroll-link" href="#contact">Contact</a>
+      </li>
+
+    </ul>
+
+
+  </div>
+
+
+<div class="header mh-100vh bg-dark  snap-child">
+
+  <nav class="navbar navbar-dark justify-content-end pt-4 main-navbar pl-5">
+
+    <a class="navbar-brand mx-auto" href="#"><img src="/source/dist/images/logo-inverse.svg" class="navbar-logo"/></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mainNavbar" aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  </nav>
+
+<div class="cover_video bg-full" style="background-image:url('/source/dist/images/intro.jpg');">
+
+             <video autoplay muted loop playsinline id="introvideo">
+               <source src="/source/dist/images/intro.mp4" type="video/mp4">
+               <img src="/source/dist/images/intro.jpg"/>
+             </video>
+            <div class="content_overlay_wrap">
+              <div class="content_overlay text-white text-center">
+                <div class="container">
+                  <h1 class="display-4"><strong>We Map Waste</strong></h1>
+                  <a href="#contact" class="btn btn-outline-white mx-sm-3 scroll-link mt-2">GET IN TOUCH <i class="fa fa-long-arrow-right ml-2"></i></a>
+
+                  <a href="#zones" class="d-none btn btn-long mx-sm-3 scroll-link">FOR CITIES <i class="fa fa-long-arrow-right ml-2"></i></a>
+                  <a href="#companies" class="d-none btn btn-long mx-sm-3 scroll-link">FOR COMPANIES <i class="fa fa-long-arrow-right ml-2"></i></a>
+                </div>
+
+                <div class="container mt-2 mt-5 pt-md-5 d-none d-sm-block">
+                  <p class="text-center">Since the beginning of 2020, The European Union has produced: </p>
+                  <div class="card-deck home-numbers">
+                    <div class="card text-center">
+                      <h2> <strong class="twaste">972 894 094.8</strong></h2>
+                      <span>T OF WASTE</span>
+                    </div>
+                    <div class="card text-center">
+                      <h2><strong class="cwaste">972 894 094.8</strong></h2>
+                      <span>T OF CARBON EMISSIONS DUE TO WASTE TREATMENT</span>
+                    </div>
+                    <div class="card text-center">
+                      <h2><strong  class="kwaste">972 894 094.8</strong></h2>
+                      <span>KM OF WASTE TRANSPORTATION</span>
+                    </div>
+                  </div>
+                </div>
+                </div>
+                <div class="godown text-white text-center w-100 d-block pb-3 scroll-100"> <h3><i class="fa fa-long-arrow-down"></i></h3></div>
+
+            </div>
+            <div class="content_overlay_wrap d-block d-sm-none text-white">
+              <div class="container mt-2 mt-5 pt-5">
+                <p class="text-center pt-5">Since the beginning of 2020, The European Union has produced: </p>
+                <div class="card-deck home-numbers">
+                  <div class="card text-center">
+                    <h2> <strong class="twaste">972 894 094.8</strong></h2>
+                    <span>T OF WASTE</span>
+                  </div>
+                  <div class="card text-center">
+                    <h2><strong class="cwaste">972 894 094.8</strong></h2>
+                    <span>T OF CARBON EMISSIONS DUE TO WASTE TREATMENT</span>
+                  </div>
+                  <div class="card text-center">
+                    <h2><strong  class="kwaste">972 894 094.8</strong></h2>
+                    <span>KM OF WASTE TRANSPORTATION</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+</div>
+
+</div>
+
+<div class="main bg-light">
+
+  <nav class="navbar sticky-top navbar-light pt-4 second-navbar bg-light" id="mission">
+    <a class="navbar-brand ml-5" href="#"><img src="/source/dist/images/logo_horizontal.svg" class="navbar-logo-small"/></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mainNavbar" aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  </nav>
+
+  <div class="mh-100vh snap-child pt-md-5">
+    <div class="container pt-md-5">
+      <div class="row py-5">
+        <div class="col-md-5 pt-5 content">
+          <h3 class="small-title"><strong>MISSION</strong></h3>
+          <p>Developed at the Delft University of Technology and Amsterdam Institute of Advanced Metropolitan Solutions, geoFluxus is a unique platform that maps, analyses and predicts where, how and which materials can be saved from becoming waste. Our mission is to get rid of the concept of waste all together.</p>
+        </div>
+        <div class="col-md-6 offset-md-1 pt-5">
+          <h3 class="small-title mb-3"><strong>Currently we are working with:</strong></h3>
+          <img src="/source/dist/images/partners.png" class="w-100">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="mh-100vh snap-child pt-md-5">
+    <div class="container pt-md-5">
+      <div class="row py-5">
+        <div class="col-md-6 pt-5 content">
+          <h3 class="small-title"><strong>MISSION</strong> - Governments</h3>
+          <p>Governments need to meet sustainability targets, as set out in the European Green Deal, European Circular Economy Action Plan, Paris Agreement. </p>
+          <p>Although they mostly focus their efforts on consumer waste, our analyses show that industrial waste is responsible for the lion’s share of lost resources and environmental impacts.</p>
+        </div>
+        <div class="col-md-5 offset-md-1 pt-5">
+          <div class="embed-responsive pie-fix embed-responsive-4by3">
+            <iframe class="embed-responsive-item" src="https://datawrapper.dwcdn.net/dFfrE/1/"></iframe>
+          </div>
+          <p><small>Distribution of household and industrial waste in the Amsterdam Metropolitan Area in 2019, see the Amsterdam Circular Monitor for more information</small></p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="vh-100 snap-child" id="companies">
+    <div class="container">
+      <div class="row pt-5">
+
+        <div class="col-md-12 pt-5 bg-light content">
+          <h3 class="small-title sankey-fix-over"><strong>MISSION</strong> - Companies</h3>
+          <p class="sankey-fix-over">Some companies are looking for cheaper, locally available materials. Others dispose perfectly reusable materials into landfills and incinerators.</p>
+          <div class="embed-responsive embed-responsive-16by9 d-none d-md-block sankey-fix">
+            <iframe class="embed-responsive-item" src="/graph/home/graph.html"></iframe>
+          </div>
+          <img src="/source/dist/images/sankey_mobile.png" class="w-100 d-block d-md-none"/>
+          <p class="sankey-fix-over"><small> Aggregated waste flow movements in the Amsterdam Metropolitan Area in 2019, developed as part of the Amsterdam Circular Monitor.</small></p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="mh-100vh snap-child scroll-child" id="product">
+    <div class="container pt-md-5">
+      <div class="row py-5">
+        <div class="col-md-12 pt-5">
+          <div class="content"><h3 class="small-title"><strong>PRODUCT</strong></h3>
+          <p>We take the responsibility for developing a Circular Economy into our own hands. We demand change by orchestrating cutting edge academic research with savvy business models and a deep-routed desire for positive impact. </p>
+          </div>
+          <div class="card-deck product-icons block-4 pt-md-5 mt-md-5">
+            <div class="card">
+              <img src="/source/dist/images/ico1.svg" class="card-img-top mb-3" alt="">
+              <div class="card-body p-0 pr-1">
+                <h5 class="card-title">1. DATA INVENTORY</h5>
+                <p class="card-text">We identify the potential data sources in your organization. For the governments we mostly use industrial waste reports. For the companies we can use invoices and billing data.</p>
+              </div>
+            </div>
+            <div class="card">
+              <img src="/source/dist/images/ico2.svg" class="card-img-top mb-3" alt="">
+              <div class="card-body p-0">
+                <h5 class="card-title">2. DATA ANALYSIS</h5>
+                <p class="card-text">We use advanced geospatial modeling and natural language processing algorithms to add contextual information, interpret and classify your waste.</p>
+              </div>
+            </div>
+            <div class="card">
+              <img src="/source/dist/images/ico3.svg" class="card-img-top mb-3" alt="">
+              <div class="card-body p-0">
+                <h5 class="card-title">3. DATA VISUALISATION</h5>
+                <p class="card-text">We provide you with an online dashboard which allows to discover how and why the value of the materials gets lost.</p>
+              </div>
+            </div>
+            <div class="card">
+              <img src="/source/dist/images/ico4.svg" class="card-img-top mb-3" alt="">
+              <div class="card-body p-0">
+                <h5 class="card-title">4. IMPACT ASSESSMENT</h5>
+                <p class="card-text">We provide environmental, social and financial impact assessment related with your waste.</p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+
+  <div class="mh-100vh snap-child scroll-child" id="projects">
+    <div class="container">
+      <div class="row py-5">
+        <div class="col-md-12 pt-md-5">
+          <div class="card-deck project-blocks block-3 pt-5">
+            <div class="card mb-1 mb-md-4 pt-md-5 " style="background: rgb(242,242,243); background: linear-gradient(137deg, rgba(242,242,243,1) 0%, rgba(242,242,243,1) 30%, rgba(255,240,90,1) 100%);">
+              <div class="card-body ">
+                <a href="https://assets.amsterdam.nl/publish/pages/867635/monitor_circular.pdf" target="_blank"><h5 class="card-sup m-0">PROJECT</h5>
+                <h3 class="card-title m-0">Amsterdam Nulmeting</h3></a>
+              </div>
+            </div>
+            <div class="card mb-1 mb-md-4 pt-md-5 " style="background: rgb(242,242,243); background: linear-gradient(137deg, rgba(242,242,243,1) 0%, rgba(242,242,243,1) 30%, rgba(0,62,163,1) 100%);">
+              <div class="card-body ">
+                <a href="https://c-creators.org/application/files/1615/7564/6563/Juryrapport-opwegnaareencirculairestad-los.pdf" target="_blank"><h5 class="card-sup m-0">PROJECT</h5>
+                <h3 class="card-title m-0">Circular Window Frames</h3></a>
+              </div>
+            </div>
+            <div class="card mb-1 mb-md-4 pt-md-5 " style="background: rgb(242,242,243); background: linear-gradient(137deg, rgba(242,242,243,1) 0%, rgba(242,242,243,1) 30%, rgba(246,142,95,1) 100%);">
+              <div class="card-body ">
+                <a href="https://gdse.h2020repair.bk.tudelft.nl/" target="_blank"><h5 class="card-sup m-0">PROJECT</h5>
+                <h3 class="card-title m-0">REPAiR</h3></a>
+              </div>
+            </div>
+            <div class="card mb-1 mb-md-4 pt-md-5 " style="background: rgb(242,242,243); background: linear-gradient(137deg, rgba(242,242,243,1) 0%, rgba(242,242,243,1) 30%, rgba(6,167,125,1) 100%);">
+              <div class="card-body ">
+                <a href="https://gdse.h2020cinderela.bk.tudelft.nl/" target="_blank"><h5 class="card-sup m-0">PROJECT</h5>
+                <h3 class="card-title m-0">CINDERELA</h3></a>
+              </div>
+            </div>
+            <div class="card mb-1 mb-md-4 pt-md-5 " style="background: rgb(242,242,243); background: linear-gradient(137deg, rgba(242,242,243,1) 0%, rgba(242,242,243,1) 30%, rgba(242,66,54,1) 100%);">
+              <div class="card-body ">
+                <a href="https://op.europa.eu/documents/3083543/6708642/datathon_shortlist_final5.png/22c8eb1c-bdcb-d41d-e014-f76ace47010f?t=1590766871588" target="_blank"><h5 class="card-sup m-0">PROJECT</h5>
+                <h3 class="card-title m-0">EU Datathon 2020</h3></a>
+              </div>
+            </div>
+            <div class="card mb-1 mb-md-4 pt-md-5 " style="background: rgb(242,242,243); background: linear-gradient(137deg, rgba(242,242,243,1) 0%, rgba(242,242,243,1) 30%, rgba(168,198,134,1) 100%);">
+              <div class="card-body ">
+                <a href="https://www.ams-institute.org/events/climatelaunchpad-ams-institute/" target="_blank"><h5 class="card-sup m-0">PROJECT</h5>
+                <h3 class="card-title m-0">EIT Climate LaunchPad</h3></a>
+              </div>
+            </div>
+            <div class="card mb-1 mb-md-4 pt-md-4 " style="background: rgb(242,242,243); background: linear-gradient(137deg, rgba(242,242,243,1) 0%, rgba(242,242,243,1) 30%, rgba(35,61,77,1) 100%);">
+              <div class="card-body ">
+                <h5 class="card-sup m-0">PROJECT</h5>
+                <h3 class="card-title m-0">ARCADIS City 2030 Accelerator powered by Techstars</h3>
+              </div>
+            </div>
+            <div class="card mb-1 mb-md-4 pt-md-4" style="background: rgb(242,242,243); background: linear-gradient(137deg, rgba(242,242,243,1) 0%, rgba(242,242,243,1) 30%, rgba(168,130,221,1) 100%);">
+              <div class="card-body pt-md-4">
+                <a href="http://nlintheusa.com/smart-cities-integrated-solutions/ " target="_blank"><h5 class="card-sup m-0 pt-md-3 d-block">PROJECT</h5>
+                <h3 class="card-title m-0">Smart Cities NYC </h3></a>
+              </div>
+            </div>
+
+
+
+
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+
+
+
+  <div class="mh-100vh snap-child" id="zones">
+
+      <div id="map" class="map vh-100 w-100">
+      <div id="popup"></div>
+      </div>
+      <div id="info"></div>
+
+      <script type="text/javascript">
+
+            var data = [{
+                "id": 1,
+                "city": "Amsterdam",
+                "lat": 52.370216,
+                "lon": 4.895168,
+                "year": 2016,
+                "color": "rgb(158, 1, 66)",
+              },
+              {
+                "id": 2,
+                "city": "Ghent",
+                "lat": 51.054342,
+                "lon": 3.717424,
+                "year": 2017,
+                "color": "rgb(205, 55, 75)",
+              },
+              {
+                "id": 3,
+                "city": "Hamburg",
+                "lat": 53.551085,
+                "lon": 9.993682,
+                "year": 2018,
+                "color": "rgb(236, 102, 73)",
+              },
+              {
+                "id": 4,
+                "city": "Naples",
+                "lat": 40.851775,
+                "lon": 14.268124,
+                "year": 2016,
+                "color": "rgb(250, 155, 90)",
+              },
+              {
+                "id": 5,
+                "city": "Trento",
+                "lat": 46.074779,
+                "lon": 11.121749,
+                "year": 2019,
+                "color": "rgb(254, 205, 124)",
+              },
+              {
+                "id": 6,
+                "city": "Lodz",
+                "lat": 51.759248,
+                "lon": 19.455983,
+                "year": 2018,
+                "color": "rgb(254, 240, 165)",
+              },
+              {
+                "id": 7,
+                "city": "Katowice",
+                "lat": 50.264892,
+                "lon": 19.023781,
+                "year": 2019,
+                "color": "rgb(242, 249, 172)",
+              },
+              {
+                "id": 8,
+                "city": "Bilbao",
+                "lat": 43.263013,
+                "lon": -2.934985,
+                "year": 2019,
+                "color": "rgb(207, 236, 158)",
+              },
+              {
+                "id": 9,
+                "city": "Maribor",
+                "lat": 46.55465,
+                "lon": 15.645881,
+                "year": 2019,
+                "color": "rgb(152, 213, 164)",
+              },
+              {
+                "id": 10,
+                "city": "Pecs",
+                "lat": 46.072735,
+                "lon": 18.232266,
+                "year": 2017,
+                "color": "rgb(94, 181, 171)",
+              },
+              {
+                "id": 11,
+                "city": "Umag",
+                "lat": 45.437206,
+                "lon": 13.525721,
+                "year": 2019,
+                "color": "rgb(66, 131, 180)",
+              }
+            ]
+
+            var pointFeatures = [];
+
+            data.forEach(city => {
+              let feature = new ol.Feature({
+                geometry: new ol.geom.Point([city.lon, city.lat]).transform('EPSG:4326', 'EPSG:3857')
+              });
+              feature.name = city.city;
+              feature.year = city.year
+
+              let style = new ol.style.Style({
+                image: new ol.style.Circle({
+                  radius: 9,
+                  fill: new ol.style.Fill({
+                    color: city.color
+                  })
+                })
+              })
+              feature.setStyle(style)
+
+              pointFeatures.push(feature);
+            });
+
+            var map = new ol.Map({
+              controls: ol.control.defaults({
+                attribution: false,
+                zoom: false,
+              }),
+              target: 'map',
+              layers: [
+                new ol.layer.Tile({
+                  source: new ol.source.XYZ({
+                    url: 'https://cartodb-basemaps-{a-d}.global.ssl.fastly.net/dark_all/{z}/{x}/{y}.png'
+                  })
+                }),
+                new ol.layer.Vector({
+                  source: new ol.source.Vector({
+                    features: pointFeatures
+                  }),
+                })
+              ],
+              interactions: [],
+              view: new ol.View({
+                center: ol.proj.fromLonLat([10.54, 47.69]),
+                zoom: 4.4,
+              })
+            });
+
+            // Popup, can be styled via .cityDot class:
+            var element = document.getElementById('popup');
+
+            var popup = new ol.Overlay({
+              element: element,
+              positioning: 'bottom-center',
+              stopEvent: false,
+              offset: [0, -10]
+            });
+            map.addOverlay(popup);
+
+            map.on('click', function(event) {
+              var feature = map.getFeaturesAtPixel(event.pixel)[0];
+              if (feature) {
+                var coordinate = feature.getGeometry().getCoordinates();
+
+                popup.setPosition(coordinate);
+
+                $(element).popover('dispose');
+
+                $(element).popover({
+                  trigger: 'manual',
+                  placement: 'top',
+                  //title: feature.name,
+                  //content: feature.year,
+                  content: feature.name,
+                  html: false,
+                });
+
+                $(element).popover('show');
+              } else {
+                $(element).popover('dispose');
+              }
+
+
+            });
+
+          </script>
+  </div>
+
+
+  <div class="mh-100vh snap-child scroll-child" id="team">
+    <div id="aboutSlider" class="carousel slide" data-ride-off="carousel" data-wrap="true">
+      <ol class="carousel-indicators">
+        <li data-target="#aboutSlider" data-slide-to="0" class="active"></li>
+        <li data-target="#aboutSlider" data-slide-to="1"></li>
+        <li data-target="#aboutSlider" data-slide-to="2"></li>
+        <li data-target="#aboutSlider" data-slide-to="3"></li>
+        <li data-target="#aboutSlider" data-slide-to="4"></li>
+        <li data-target="#aboutSlider" data-slide-to="5"></li>
+        <li data-target="#aboutSlider" data-slide-to="6"></li>
+        <li data-target="#aboutSlider" data-slide-to="7"></li>
+        <li data-target="#aboutSlider" data-slide-to="8"></li>
+      </ol>
+      <div class="carousel-inner">
+        <div class="carousel-item active mh-100vh px-5 px-md-0">
+
+          <div class="container pt-5">
+            <div class="row py-5">
+              <div class="col-md-8 pt-md-5">
+                <h3 class="small-title"><strong>ABOUT US</strong></h3>
+                <div class="scroll-trough">
+                <p class="lead"> geoFluxus aims to make a positive, sustainable and actionable global impact by developing innovative and integrative open-source resource management tools. Our goal is to become a one-stop-shop for the management of (waste) materials, stakeholders, and decision-making through data-driven technologies.</p>
+                <p> We want to democratize public waste flow data, hit/check sustainability targets, create new business opportunities and accelerate the transition towards the circular economy with the largest possible environmental, social, and financial benefits.</p>
+                <p> We are a spin-off company from the Delft University of Technology (TUDelft) and the Amsterdam Institute for Advanced Metropolitan Solutions (AMS Institute). Our platform is based and supported out of 2 large European Horizon 2020 research projects (REPAiR and CINDERELA).</p>
+                <p> geoFluxus has been part of the Arcadis City of 2030 Accelerator, powered by Techstars - view our demo day here. We were a national finalist of the European Institute of Innovation and Technology (EIT) Climate-KIC Launchpad 2019 program.  </p>
+                </div>
+              </div>
+              <div class="col-md-3 offset-md-1 pt-2 pt-md-5">
+                <h3 class="small-title"><strong>TEAM</strong></h3>
+                <p>
+                  <a href="#" data-target="#aboutSlider" data-slide-to="1" class="text-black">Arnout Sabbe</a><br/>
+  <a href="#" data-target="#aboutSlider" data-slide-to="2" class="text-black">Rusnė Šilerytė</a><br/>
+  <a href="#" data-target="#aboutSlider" data-slide-to="3" class="text-black">Matthieu Bodin</a><br/>
+  <a href="#" data-target="#aboutSlider" data-slide-to="4" class="text-black">Kozmo Meister</a><br/>
+  <a href="#" data-target="#aboutSlider" data-slide-to="5" class="text-black">Vasileios Bouzas</a><br/>
+
+                    <a href="#" data-target="#aboutSlider" data-slide-to="6" class="text-black">Evert van Hirtum</a><br/>
+
+                    <a href="#" data-target="#aboutSlider" data-slide-to="7" class="text-black">Jolanta Jasiulionyte</a><br/>
+
+                          <a href="#" data-target="#aboutSlider" data-slide-to="8" class="text-black">Bram Vercamer</a>
+                       </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="carousel-item mh-100vh px-5 px-md-0">
+          <div class="container pt-5">
+            <div class="row py-5">
+              <div class="col-md-7 pt-md-5">
+                <small>CEO & CO-FOUNDER</small>
+                <h3>Arnout Sabbe</h3>
+                <p>
+                Arnout is an accomplished and highly-energetic leader with multiple years of experience in working in large and complex projects across the globe. Originally trained as an architect, he worked in Singapore, Zurich and Brussels, before moving to Rotterdam to focus on technology-driven sustainability innovation.
+                </p>
+              </div>
+              <div class="col-md-3 offset-md-1 pt-2 pt-md-5" >
+                <img src="/media/team/GeoFluxus-Arnaut.jpg" class="w-100"/>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="carousel-item mh-100vh px-5 px-md-0">
+          <div class="container pt-5">
+            <div class="row py-5 flex-row-reverse">
+
+              <div class="col-md-7 offset-md-1  pt-md-5">
+                <small>CTO & CO-FOUNDER</small>
+                <h3>Rusne Sileryte</h3>
+                <p>
+                  Rusne is a data analytics expert, especially focused on spatial data. She has worked on multiple research projects throughout Europe and therefore has experience in working with and coordinating remote multinational teams. Throughout her career she has been involved in developing stand-alone analytics software projects as well as web-applications - always focused on improving the sustainability of the built environment.
+                </p>
+              </div>
+              <div class="col-md-3 pt-2 pt-md-5">
+                <img src="/media/team/GeoFluxus-Rusne.jpg" class="w-100"/>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+        <div class="carousel-item mh-100vh px-5 px-md-0">
+          <div class="container pt-5">
+            <div class="row py-5">
+              <div class="col-md-7 pt-md-5">
+                <small>COO</small>
+                <h3>Matthieu Bodin</h3>
+                <p>
+                  Matthieu is getting geoFluxus structured for scale. Previously based in China, he worked for XNode as Head of Growth and Techstars as Regional Manager for Greater China. He helped startup founders and corporate innovators to build strong businesses. Matthieu has worked with Continental, INFINITI, Intel, Jardine Matheson, Legrand, MTR, Scania, Siemens, the UNDP, and more on large-scale innovation projects in APAC.
+                </p>
+              </div>
+              <div class="col-md-3 offset-md-1 pt-2 pt-md-5">
+                <img src="/media/team/GeoFluxus-Matthieu.jpg" class="w-100"/>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="carousel-item mh-100vh px-5 px-md-0">
+          <div class="container pt-5">
+            <div class="row py-5 flex-row-reverse">
+
+              <div class="col-md-7 offset-md-1 pt-md-5">
+                <small>DATA ANALYST</small>
+                <h3>Kozmo Meister</h3>
+                <p>
+                  Kozmo integrates the science of sustainability into geoFluxus. With an interdisciplinary background in natural sciences and Industrial Ecology (the field that shaped our current concept of the circular economy) from the TU Delft and Leiden University, Kozmo works on harmonizing the material and energy flows between society’s industrial systems and our planet’s natural ecosystems to drive large-scale positive impact.
+                </p>
+              </div>
+              <div class="col-md-3 offset-md-1 pt-2 pt-md-5">
+                <img src="/media/team/GeoFluxus-Kozmo.jpg" class="w-100"/>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="carousel-item mh-100vh px-5 px-md-0">
+          <div class="container pt-5">
+            <div class="row py-5">
+              <div class="col-md-7 pt-md-5">
+                <small>FULL-STACK DEVELOPER</small>
+                <h3>Vasileios Bouzas</h3>
+                <p>
+                  Vasileios Bouzas is a Geomatics Engineer with a Master of Science from National Technical   University   of   Athens   (Greece)   and   Delft   University   of   Technology (Netherlands). He has years of experience working on projects about transportation network design, urban   planning   and   circular   economy,   while   his   expertise   focuses   on Geo/GeoWeb   (both   backend   and   frontend)   app   development   and   Computer Graphics for Geospatial applications.
+                </p>
+              </div>
+              <div class="col-md-3 offset-md-1 pt-2 pt-md-5">
+                <img src="/media/team/GeoFluxus-Vasileios.jpg" class="w-100"/>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="carousel-item mh-100vh px-5 px-md-0">
+          <div class="container pt-5">
+            <div class="row py-5 flex-row-reverse">
+
+              <div class="col-md-7 offset-md-1 pt-md-5">
+                <small>FRONT-END DEVELOPER</small>
+                <h3>Evert van Hirtum</h3>
+                <p>
+                  Evert Van Hirtum is an IT professional with a focus on front-end development, data visualisation, and cyber security. After having led the service desk of the Identity and Access Management programme of the Flemish Government for multiple years, he joined the geoFluxus team in February 2020 as a front-end developer.
+                </p>
+              </div>
+              <div class="col-md-3 offset-md-1 pt-2 pt-md-5">
+                <img src="/media/team/GeoFluxus-Evert.jpg" class="w-100"/>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="carousel-item mh-100vh px-5 px-md-0">
+          <div class="container pt-5">
+            <div class="row py-5">
+              <div class="col-md-7 pt-md-5">
+                <small>PRODUCT DEVELOPER</small>
+                <h3>Jolanta Jasiulionyte</h3>
+                <p>
+                  Jolanta Jasiulionyte is a Product Developer with 10 years of experience in conceptual product design and software development areas, building products for European and global markets. She has worked for Mcdonalds, Carlsberg, startup banking, prop-tech and events-tech platforms. Having engaged in the full product development pipeline from concept to prototype her focus falls on translating client and market requirements to tangible products and interfaces by combining the expertise of product design, user experience and cutting-edge technologies.
+                </p>
+              </div>
+              <div class="col-md-3 offset-md-1 pt-2 pt-md-5">
+                <img src="/media/team/GeoFluxus-Jolanta.jpg" class="w-100"/>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="carousel-item mh-100vh px-5 px-md-0">
+          <div class="container pt-5">
+            <div class="row py-5 flex-row-reverse">
+              <div class="col-md-7 offset-md-1 pt-md-5">
+                <small>BUSINESS DEVELOPER</small>
+                <h3>Bram Vercamer</h3>
+                <p>
+                  Bram focuses on finance and long-term strategy to help the company grow in a rapid, but sustainable way. He has +8 years of experience working in various operational and strategic management positions for a top 20 Fortune 500 energy company (Total). This strong business foundation now helps to monitor the financial compass of the company. In terms of international experience, he has previously worked in Paris, France and the BENELUX. Bram has an educational background in Management and International Politics and has interned at the United Nations Secretariat (UNODA) in New York and the Regional Flemish Parliament.
+                </p>
+              </div>
+              <div class="col-md-3 offset-md-1 pt-2 pt-md-5">
+                <img src="/media/team/GeoFluxus-Bram.jpg" class="w-100"/>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <a class="carousel-control-prev" href="#aboutSlider" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="carousel-control-next" href="#aboutSlider" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+  </div>
+
+
+  <div class="mh-100vh snap-child" id="contact">
+    <div class="container pt-5">
+        <div class="row py-md-5">
+          <div class="col-md-4  pt-5">
+            <h3><strong>CONTACT</strong></h3>
+            <p class="lead">Contact us to discover the value we can bring to your organisation</p>
+            <a href="mailto:founders@geofluxus.com" class="text-black">founders@geofluxus.com</a>
+          </div>
+          <div class="col-md-7 offset-md-1 pt-5">
+            <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/shell.js"></script>
+            <script>
+              hbspt.forms.create({
+              portalId: "7700366",
+              formId: "3da2cdcd-8dbd-4853-9e59-7cba38c92302"
+            });
+            </script>
+            <!-- Start of HubSpot Embed Code, to be added before </body> -->
+              <script type="text/javascript" id="hs-script-loader" async defer src="//js.hs-scripts.com/7700366.js"></script>
+              <!-- End of HubSpot Embed Code -->
+          </div>
+        </div>
+    </div>
+  </div>
+
+</div>
+</div>
+</div>
+
+
+<script src="/source/dist/js/core.min.js?v=4"></script>
+<script src="/source/dist/js/plugins.min.js?v=4" defer></script>
+<script src="/source/dist/js/elements.min.js?v=4" defer></script>
+
+</body>
+</html>

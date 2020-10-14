@@ -1,0 +1,252 @@
+// Buttons
+.btn-outline-white {
+	border:solid 1px $white;
+	color:$white;
+	background: none;
+	&:hover {
+		background-color: $white;
+		color:$black;
+	}
+}
+.btn-outline-black {
+	border:solid 1px $black;
+	color:$black;
+	background: none;
+	&:hover {
+		background-color: $black;
+		color:$white;
+	}
+}
+.btn-outline-primary {
+	border:solid 1px $primary;
+	color:$primary;
+	background: none;
+	&:hover {
+		background-color: $primary;
+		color:$white;
+	}
+}
+.btn-outline-secondary {
+	border:solid 1px $secondary;
+	color:$secondary;
+	background: none;
+	&:hover {
+		background-color: $secondary;
+		color:$secondary;
+	}
+}
+
+.btn-white {
+	border:solid 1px $white;
+	color:$primary;
+	background-color: $white;
+	&:hover {
+		background: none;
+		color:$white;
+	}
+}
+.btn-black {
+	border:solid 1px $black;
+	color:$white;
+	background-color: $black;
+	&:hover {
+		background: none;
+		color:$black;
+	}
+}
+.text-black {
+	color:$black;
+}
+.text-white {
+	color:$white;
+}
+.bg-black {
+	background-color:$black;
+}
+.bg-white {
+	background-color:$white;
+}
+
+
+@include media-breakpoint-down(sm) {
+	.btn {
+		white-space:normal !important;
+	}
+}
+
+
+
+strong {
+	font-weight:700;
+}
+
+::selection {
+  background: lighten($primary,30%); /* WebKit/Blink Browsers */
+}
+::-moz-selection {
+  background: lighten($primary,30%); /* Gecko Browsers */
+}
+
+
+// Forms
+
+.invalid .form-control, .was-validated .form-control:invalid, .form-control.is-invalid, .was-validated .custom-select:invalid, .custom-select.is-invalid {
+	border-color: $danger;
+}
+.invalid .invalid-feedback {
+	display:block;
+}
+
+
+
+
+// Text
+.text-condensed {
+	//font-family: $font-family-condensed;
+	font-weight:400;
+}
+.text-center {
+	//font-family: $font-family-condensed;
+	text-align:center;
+	width:100%;
+}
+.text-ucase {
+ text-transform: uppercase;
+}
+
+// element size
+.w-100 {
+	width:100%;
+}
+.w-50 {
+	width:50%;
+}
+.h-100vh {
+	height:100vh;
+}
+.h-100 {
+	height:100%;
+}
+.h-80vh {
+	height:80vh;
+}
+.h-80 {
+	height:80%;
+}
+.h-50vh {
+	height:50vh;
+}
+.h-50 {
+	height:50%;
+}
+.mh-100vh {
+	min-height:100vh;
+}
+.mh-100 {
+	min-height:100%;
+}
+.mh-80vh {
+	min-height:80vh;
+}
+.mh-80 {
+	min-height:80%;
+}
+.mh-50vh {
+	min-height:50vh;
+}
+.mh-50 {
+	min-height:50%;
+}
+
+// element position central
+.centralize {
+	position:absolute;
+	top:50%;
+	left:50%;
+	transform: translate(-50%,-50%);
+}
+.centralize-wrap {
+	position:relative;
+}
+
+
+// Cards
+
+// number of cards per line for each breakpoint
+$cards-per-line6: (
+    xs: 2,
+    sm: 2,
+    md: 3,
+    lg: 6,
+    xl: 6
+);
+$cards-per-line5: (
+    xs: 2,
+    sm: 2,
+    md: 3,
+    lg: 5,
+    xl: 5
+);
+$cards-per-line4: (
+    xs: 2,
+    sm: 2,
+    md: 2,
+    lg: 4,
+    xl: 4
+);
+$cards-per-line3: (
+    xs: 1,
+    sm: 1,
+    md: 2,
+    lg: 3,
+    xl: 3
+);
+$cards-per-line2: (
+    xs: 1,
+    sm: 1,
+    md: 2,
+    lg: 2,
+    xl: 2
+);
+$cards-per-line1: (
+    xs: 1,
+    sm: 1,
+    md: 1,
+    lg: 1,
+    xl: 1
+);
+
+@each $name, $breakpoint in $grid-breakpoints {
+    @media (min-width: $breakpoint) {
+				.block-6 {
+					.card-deck .card, &.card-deck .card {
+						flex: 0 0 calc(#{100/map-get($cards-per-line6, $name)}% - #{$grid-gutter-width});
+					}
+				}
+				.block-5 {
+          .card-deck .card, &.card-deck .card {
+            flex: 0 0 calc(#{100/map-get($cards-per-line5, $name)}% - #{$grid-gutter-width});
+          }
+        }
+        .block-4 {
+					.card-deck .card, &.card-deck .card {
+            flex: 0 0 calc(#{100/map-get($cards-per-line4, $name)}% - #{$grid-gutter-width});
+        	}
+				}
+				.block-3 {
+					.card-deck .card, &.card-deck .card {
+            flex: 0 0 calc(#{100/map-get($cards-per-line3, $name)}% - #{$grid-gutter-width});
+        	}
+				}
+        .block-2 {
+					.card-deck .card, &.card-deck .card {
+            flex: 0 0 calc(#{100/map-get($cards-per-line2, $name)}% - #{$grid-gutter-width});
+        	}
+				}
+        .block-1 {
+					.card-deck .card, &.card-deck .card {
+            flex: 0 0 calc(#{100/map-get($cards-per-line1, $name)}% - #{$grid-gutter-width});
+        	}
+				}
+    }
+}
